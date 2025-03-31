@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tarea 10"/>
+        <attribute name="authors" value="HUAWEI"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-30 03:26:55 p. m."/>
+        <attribute name="created" value="SFVBV0VJO01BUkNPU1I7MjAyNS0wMy0zMDswMjowNTo0NCBwLiBtLjsyNDQ4"/>
+        <attribute name="edited" value="SFVBV0VJO01BUkNPU1I7MjAyNS0wMy0zMDswMzoyNjo1NSBwLiBtLjsxOzI1NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;Que edad tienes?&quot;" newline="True"/>
+            <input variable="edad"/>
+            <if expression="edad &gt;= 18">
+                <then>
+                    <output expression="&quot;Debes pagar $500&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edad &lt;= 4">
+                        <then>
+                            <output expression="&quot;Puedes entrar gratis&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Debes pagar $200&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
