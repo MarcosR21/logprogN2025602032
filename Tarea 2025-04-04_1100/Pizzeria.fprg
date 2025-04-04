@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Pizzeria"/>
+        <attribute name="authors" value="HUAWEI"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-03 10:27:35 p. m."/>
+        <attribute name="created" value="SFVBV0VJO01BUkNPU1I7MjAyNS0wNC0wMzswOTo1MToxNSBwLiBtLjsyNDU1"/>
+        <attribute name="edited" value="SFVBV0VJO01BUkNPU1I7MjAyNS0wNC0wMzsxMDoyNzozNSBwLiBtLjsxOzI1NjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pizza" type="String" array="False" size=""/>
+            <declare name="ingrediente" type="String" array="False" size=""/>
+            <output expression="&quot;&#191;Desea una pizza vegetariana o no?&quot;" newline="True"/>
+            <output expression="&quot;Todas las pizzas contienen mozzarella y tomate&quot;" newline="True"/>
+            <input variable="pizza"/>
+            <if expression="pizza == &quot;Si&quot;">
+                <then>
+                    <output expression="&quot;&#191;Que ingrediente quieres? Ingredientes: Pimienta y Tofu&quot;" newline="True"/>
+                    <input variable="ingrediente"/>
+                    <if expression="ingrediente == &quot;Pimiento&quot;">
+                        <then>
+                            <output expression="&quot;Usted a elegido una pizza vegetariana con mozzarella, tomate y Pimiento&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Usted a elegido una pizza vegetariana con mozzarella, tomate y Tofu&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;&#191;Que ingrediente quieres? Ingredientes: Peperoni, Jamon y Salmon&quot;" newline="True"/>
+                    <input variable="ingrediente"/>
+                    <if expression="ingrediente == &quot;Peperoni&quot;">
+                        <then>
+                            <output expression="&quot;Usted a elegido una pizza vegetariana con mozzarella, tomate y Peperoni&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="ingrediente == &quot;Jamon&quot;">
+                                <then>
+                                    <output expression="&quot;Usted a elegido una pizza vegetariana con mozzarella, tomate y Jamon&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Usted a elegido una pizza vegetariana con mozzarella, tomate y Salmon&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
