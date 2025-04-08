@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fibonacci"/>
+        <attribute name="authors" value="HUAWEI"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 05:22:25 p. m."/>
+        <attribute name="created" value="SFVBV0VJO01BUkNPU1I7MjAyNS0wNC0wNzswNjoyMzowOCBwLiBtLjsyNDU3"/>
+        <attribute name="edited" value="SFVBV0VJO01BUkNPU1I7MjAyNS0wNC0wODswNToyMjoyNSBwLiBtLjsxOzI1NjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <assign variable="b" expression="2"/>
+            <for variable="i" start="1" end="64" direction="inc" step="1">
+                <assign variable="c" expression="a + b"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="c"/>
+                <output expression="c" newline="False"/>
+                <output expression="&quot;, &quot;" newline="False"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

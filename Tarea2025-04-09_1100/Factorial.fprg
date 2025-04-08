@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial"/>
+        <attribute name="authors" value="HUAWEI"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 06:14:31 p. m."/>
+        <attribute name="created" value="SFVBV0VJO01BUkNPU1I7MjAyNS0wNC0wNzswNDowODo0NiBwLiBtLjsyNDYw"/>
+        <attribute name="edited" value="SFVBV0VJO01BUkNPU1I7MjAyNS0wNC0wNzswNjoxNDozMSBwLiBtLjsxOzI1NjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="factorial" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="factorial" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <do expression="i &lt;= n">
+                <assign variable="factorial" expression="factorial * i"/>
+                <assign variable="i" expression="i + 1"/>
+                <output expression="i" newline="True"/>
+            </do>
+            <output expression="factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
